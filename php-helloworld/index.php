@@ -1,7 +1,7 @@
 <?php
 
  print "Hello, World! php version is " . PHP_VERSION . "\n";
- print "You are connected from " . $_SERVER['REMOTE_ADDR'] . "\n";
+ print "You are connected from " . $_SERVER['HTTP_X_FORWARDED_FOR'] . "\n";
 
  echo "<pre>";
 ?>
